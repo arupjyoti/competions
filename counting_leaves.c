@@ -104,8 +104,7 @@ void deletenode(node* head,int count,int target)                                
 
             if(count == (target))
             {
-            head->left = head->right = head->next = NULL;
-                head =  NULL;
+            free(head);
                 break;
             }
             head = head->next;
