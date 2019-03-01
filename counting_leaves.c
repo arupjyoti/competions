@@ -97,7 +97,7 @@ void main()
         leaves = getleavesnodes(head_2);
         printf("\nNo of leaves remaining in the tree = %d\n",leaves-1);
 }
-void deletenode(node* head,int count,int target)                                //  deletion at specific position
+void deletenode(node* head,int count,int target)                   //  deletion at specific position
 {
     while(head!=NULL)
     {
@@ -111,7 +111,7 @@ void deletenode(node* head,int count,int target)                                
             ++count;
         }
 }
-int getleavesnodes(node* vt)                                                    //  count the no of leaflets
+int getleavesnodes(node* vt)                                       //  count the no of leaflets
 {
     if (vt == NULL)
         return 0;
